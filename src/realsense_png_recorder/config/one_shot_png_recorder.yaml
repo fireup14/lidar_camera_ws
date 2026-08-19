@@ -1,0 +1,4 @@
+png_recorder_node:
+  ros__parameters:
+    input_topic: /camera/camera/color/image_raw
+    output_dir: /home/fire/Desktop/Lidar_Camera_Calibrator/lidar_camera_ws/docs/realsense_png

@@ -1,0 +1,9 @@
+pcd_recorder_node:
+  ros__parameters:
+    input_topic: /livox/lidar
+    message_type: pointcloud2
+    output_dir: /home/fire/Desktop/Lidar_Camera_Calibrator/lidar_camera_ws/docs/livox_pcd
+    save_duration_sec: 0.5
+    save_binary: true
+    save_on_shutdown: true
+    save_once: true

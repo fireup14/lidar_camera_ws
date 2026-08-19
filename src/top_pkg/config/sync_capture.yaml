@@ -1,0 +1,19 @@
+sync_capture_node:
+  ros__parameters:
+    # Same settings as livox_pcd_recorder/config/one_shot_pcd_recorder.yaml.
+    lidar_input_topic: /livox/lidar
+    lidar_message_type: pointcloud2
+    lidar_output_dir: /home/fire/Desktop/Lidar_Camera_Calibrator/lidar_camera_ws/docs/livox_pcd
+    lidar_save_duration_sec: 0.05
+    lidar_save_binary: true
+    # Discard LiDAR points farther than this distance from the LiDAR origin (metres).
+    # Set to 0.0 to keep all finite points.
+    max_point_distance_m: 8.0
+
+    # Same settings as realsense_png_recorder/config/one_shot_png_recorder.yaml.
+    image_input_topic: /camera/camera/color/image_raw
+    image_output_dir: /home/fire/Desktop/Lidar_Camera_Calibrator/lidar_camera_ws/docs/realsense_png
+
+    # Synchronization-specific settings.
+    queue_size: 10
+    sync_tolerance_sec: 0.05
