@@ -31,7 +31,7 @@ public:
     message_type_ = declare_parameter<std::string>("message_type", "pointcloud2");
     output_dir_ = declare_parameter<std::string>(
       "output_dir",
-      "/home/fire/Desktop/Lidar_Camera_Calibrator/lidar_camera_ws/docs/livox_pcd");
+      "docs/livox_pcd");
     save_duration_sec_ = declare_parameter<double>("save_duration_sec", 5.0);
     save_binary_ = declare_parameter<bool>("save_binary", true);
     save_on_shutdown_ = declare_parameter<bool>("save_on_shutdown", true);

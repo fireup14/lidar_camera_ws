@@ -7,7 +7,8 @@ It also supports `livox_ros_driver2/msg/CustomMsg`.
 
 - `input_topic`: subscribed point cloud topic, default `/livox/lidar`
 - `message_type`: `pointcloud2` or `custom`
-- `output_dir`: directory for exported PCD files, default `/home/fire/Desktop/Lidar_Camera_Calibrator/lidar_camera_ws/docs/livox_pcd`
+- `output_dir`: directory for exported PCD files, default `docs/livox_pcd`.
+  Relative paths are resolved from the directory where `ros2 launch` is run.
 - `save_duration_sec`: accumulation time for each exported PCD
 - `save_binary`: save binary PCD if `true`, otherwise ASCII
 - `save_on_shutdown`: flush remaining buffered points when the node exits

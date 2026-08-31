@@ -46,14 +46,14 @@ public:
     lidar_message_type_ = declare_parameter<std::string>("lidar_message_type", "pointcloud2");
     lidar_output_dir_ = declare_parameter<std::string>(
       "lidar_output_dir",
-      "/home/fire/Desktop/Lidar_Camera_Calibrator/lidar_camera_ws/docs/livox_pcd");
+      "docs/livox_pcd");
     lidar_save_duration_sec_ = declare_parameter<double>("lidar_save_duration_sec", 0.5);
     lidar_save_binary_ = declare_parameter<bool>("lidar_save_binary", true);
     image_input_topic_ = declare_parameter<std::string>(
       "image_input_topic", "/camera/camera/color/image_raw");
     image_output_dir_ = declare_parameter<std::string>(
       "image_output_dir",
-      "/home/fire/Desktop/Lidar_Camera_Calibrator/lidar_camera_ws/docs/realsense_png");
+      "docs/realsense_png");
     max_point_distance_m_ = declare_parameter<double>("max_point_distance_m", 0.0);
     queue_size_ = declare_parameter<int>("queue_size", 10);
     sync_tolerance_sec_ = declare_parameter<double>("sync_tolerance_sec", 0.1);

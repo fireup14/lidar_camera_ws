@@ -47,6 +47,8 @@ ros2 launch top_pkg bringup.launch.py
 source install/setup.bash
 ros2 launch top_pkg one_shot_sync_capture.launch.py
 ```
-
+```bash
+pcl_viewer docs/livox_pcd/00001.pcd
+```
 
 

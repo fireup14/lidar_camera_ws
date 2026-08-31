@@ -6,7 +6,8 @@ Each run saves a single PNG image and then exits.
 ## Parameters
 
 - `input_topic`: RGB image topic, default `/camera/camera/color/image_raw`
-- `output_dir`: PNG output directory, default `/home/fire/Desktop/Lidar_Camera_Calibrator/lidar_camera_ws/docs/realsense_png`
+- `output_dir`: PNG output directory, default `docs/realsense_png`.
+  Relative paths are resolved from the directory where `ros2 launch` is run.
 
 PNG files are named `00001.png`, `00002.png`, and so on. Before each save, the
 recorder scans `output_dir` for PNG files whose basename is numeric and uses

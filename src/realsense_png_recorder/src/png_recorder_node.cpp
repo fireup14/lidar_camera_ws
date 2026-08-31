@@ -23,7 +23,7 @@ public:
     input_topic_ = declare_parameter<std::string>("input_topic", "/camera/camera/color/image_raw");
     output_dir_ = declare_parameter<std::string>(
       "output_dir",
-      "/home/fire/Desktop/Lidar_Camera_Calibrator/lidar_camera_ws/docs/realsense_png");
+      "docs/realsense_png");
     ensureOutputDirectory();
 
     subscription_ = create_subscription<sensor_msgs::msg::Image>(
